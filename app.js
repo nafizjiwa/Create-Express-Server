@@ -1,3 +1,13 @@
+//Start a server using Express (a node module).
+//FIRST, Import the Express library with require.
+//SECOND, invoke EXPRESS which returns an instance of an Express application.
+//This application can then be used to start a server and specify server behavior.
+
+//The purpose of a server is to listen for requests, perform whatever action is required to satisfy the request,
+//  and then return a response. In order for our server to start responding, we have to tell the server where to listen
+// for new requests by providing a port number argument to a method called app.listen(). 
+// The server will then listen on the specified port and respond to any requests that come into it.
+  
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
